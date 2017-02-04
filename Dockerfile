@@ -57,6 +57,8 @@ RUN mkdir -p /data/db /data/configdb \
 	&& chown -R mongodb:mongodb /data/db /data/configdb
 
 COPY docker-entrypoint.sh /entrypoint.sh
+RUN sh -c 'chmod +x /entrypoint.sh'
+
 ENTRYPOINT ["/entrypoint.sh"]
 
 EXPOSE 27017
