@@ -1,4 +1,4 @@
-from python:jessie
+from python:3.4-wheezy
 
 
 # add our user and group first to make sure their IDs get assigned consistently, regardless of whatever dependencies get added
